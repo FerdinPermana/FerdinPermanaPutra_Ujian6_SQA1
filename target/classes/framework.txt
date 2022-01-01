@@ -1,0 +1,13 @@
+browser=Chrome
+myusername=ferdinpermanaputra
+emailaddress=ferdinpermana.p@gmail.com
+password=BangJago-12345
+search=glass
+firstname=
+lastname=
+company=
+address=
+city=
+postcode=
+phone=
+email=
