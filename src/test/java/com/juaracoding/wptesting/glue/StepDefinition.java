@@ -91,67 +91,121 @@ public class StepDefinition {
 	}
 	
 	// Add Cart
-	@When("^User click orders button")
-	public void User_click_order_button() {
-		addcartPage.goToAddCartShoes();
-		extentTest.log(LogStatus.PASS, "User click  order button");
+	@When("^User click Add Cart")
+	public void user_click_Add_Cart() {
+		addcartPage.goToAddCart();
+		extentTest.log(LogStatus.PASS, "User click Add Cart");
 	}
 	
-//	@And("^User click browseProduct button")
-//	public void User_click_browseProduck_button() {
-//		addcartPage.goToAddCartShoes();
-//		extentTest.log(LogStatus.PASS, "User click  browseProduct button");
-//	}
-//	
-//	@And("^User click shoes button")
-//	public void User_click_shoes_button() {
-//		addcartPage.goToAddCartShoes();
-//		extentTest.log(LogStatus.PASS, "User click  shoes button");
-//	}
-//	
-//	@And("^User click color button")
-//	public void User_click_color_button() {
-//		addcartPage.goToAddCartShoes();
-//		extentTest.log(LogStatus.PASS, "User click  color button");
-//	}
-//	
-//	@And("^User click size button")
-//	public void User_click_size_button() {
-//		addcartPage.goToAddCartShoes();
-//		extentTest.log(LogStatus.PASS, "User click  size button");
-//	}
-//	
-//	@Then("^User click addCart button")
-//	public void User_click_addCart_button() {
-//		addcartPage.goToAddCartShoes();
-//		extentTest.log(LogStatus.PASS, "User click  addCart button");
-//	}
+	@When("^User go to menu Add Cart")
+	public void user_go_to_menu_Add_Cart() {
+		extentTest.log(LogStatus.PASS, "User go to menu Add Cart");
+	}
 	
-//	@When("^User click search and input glass")
-//	public void User_click_search_and_input_glass() {
-//		addcartPage.goToAddCartGlass(configurationProperties.getSearch());
-//		extentTest.log(LogStatus.PASS, "User click  order button");
-//	}
+	@When("^User click returnshop")
+	public void user_click_returnshop() {
+		addcartPage.gotoAddCart2();
+		extentTest.log(LogStatus.PASS, "User click returnshop");
+	}
 	
-	// Check out
-//	@When("^User click viewcart button")
-//	public void User_click_viewcart_button() {
-//		checkoutPage.goToCheckout();
-//		extentTest.log(LogStatus.PASS, "User click  myaccount button");
-//	}
-//	
-//	@And("^User click checkout button")
-//	public void User_click_checkout_button() {
-//		checkoutPage.goToCheckout();
-//		extentTest.log(LogStatus.PASS, "User input username password and click Login");
-//	}
-//	
-//	@Then("^User input location firstname lastname company address city postcode phone email and click placeorder")
-//	public void User_input_location_firstname_lastname_company_address_city_postcode_phone_email_and_click_placeorder() {
-//		checkoutPage.goToOrder(configurationProperties.getFirstname(), configurationProperties.getLastname(), configurationProperties.getCompany(), configurationProperties.getAddress(), 
-//				configurationProperties.getCity(), configurationProperties.getPostcode(), configurationProperties.getPhone(), configurationProperties.getEmail());
-//		extentTest.log(LogStatus.PASS, "User input firstname,lastname,company,address,city,postcode,phone, email and click PlaceOrder");
-//	}
+	//	SHOES PRODUCT COMPARE
+	@When("^User click picture compare shoes1")
+	public void user_click_picture_compare_shoes1() {
+		addcartPage.compareShoes1();
+		extentTest.log(LogStatus.PASS, "User click picture compare shoes1");
+	}
+	
+	@When("^User click picture compare shoes2")
+	public void user_click_picture_compare_shoes2() {
+		addcartPage.compareShoes2();
+		extentTest.log(LogStatus.PASS, "User click picture compare shoes2");
+	}
+	
+	@When("^User pick one shoes")
+	public void user_pick_one_shoes() {
+		addcartPage.pickShoes();
+		extentTest.log(LogStatus.PASS, "User pick one shoes");
+	}
+	
+	@When("^User click color pick brown")
+	public void user_click_color_pick_brown() {
+		addcartPage.gotoAddCart3();
+		extentTest.log(LogStatus.PASS, "User click color pick brown");
+	}
+	
+	@When("^User click size pick tigatujuh")
+	public void user_click_size_pick_tigatujuh() {
+		addcartPage.gotoAddCart4(2);
+		extentTest.log(LogStatus.PASS, "User click size pick tigatujuh");
+	}
+	
+	@When("^User click addtocart")
+	public void user_click_addtocart() {
+		addcartPage.gotoAddCart5();
+		extentTest.log(LogStatus.PASS, "User click addtocart");
+	}
+	
+//	Glass from Search
+	@When("^User click search")
+	public void user_click_search() {
+		addcartPage.searchGlass();
+		extentTest.log(LogStatus.PASS, "User click search");
+	}
+	
+	@When("^User click input glass")
+	public void user_click_input_glass() {
+		addcartPage.inputSearchGlass(configurationProperties.getSearchGlass());
+		extentTest.log(LogStatus.PASS, "User click input glass");
+	}
+	
+	@When("^User click pictures glass")
+	public void user_click_picture_glass() {
+		addcartPage.pickGlass();
+		extentTest.log(LogStatus.PASS, "User click pictures glass");
+	}
+	
+	@When("^User click color pick white and click size pick one")
+	public void user_click_color_pick_white_and_click_size_pick_one() {
+		addcartPage.dropDownGlass();
+		extentTest.log(LogStatus.PASS, "User click color pick white and click size pick one");
+	}
+	
+	@Then("^User click addtocart glass")
+	public void user_click_addtocart_glass() {
+		addcartPage.dropDownGlass();
+		extentTest.log(LogStatus.PASS, "User click addtocart glass");
+	}
+	
+//	CartPage Proceed Checkout
+	@When("^User click addcart")
+	public void user_click_addcart() {
+		addcartPage.goToAddCart();
+		extentTest.log(LogStatus.PASS, "User click addcart");
+	}
+	
+	@When("^User go to Cartpage")
+	public void user_go_to_Cartpage() {
+		checkoutPage.gotoCartPage();
+		extentTest.log(LogStatus.PASS, "User go to Cartpage");
+	}
+	
+	@When("^User click checkout")
+	public void user_click_checkout() {
+		checkoutPage.gotoCheckout();
+		extentTest.log(LogStatus.PASS, "User click checkout");
+	}
+	
+	@When("^User input firstname lastname company address1 address2 city postcode phone additional")
+	public void user_input_firstname_lastname_company_address1_address2_city_postcode_phone_additional() {
+		checkoutPage.gotoFinish(configurationProperties.getFirstname(), configurationProperties.getLastname(), configurationProperties.getCompany(), configurationProperties.getSelectCountry(), configurationProperties.getAddress1(), configurationProperties.getAddress2(), configurationProperties.getCity(), configurationProperties.getSelectState(), configurationProperties.getPostcode(), configurationProperties.getPhone(), configurationProperties.getAdditional());
+		extentTest.log(LogStatus.PASS, "User input firstname lastname company address1 address2 city postcode phone additional");
+	}
+	
+	@Then("^User click check button terms and Place order")
+	public void user_click_check_button_terms_and_Place_order() {
+		checkoutPage.gotoFinish2();
+		extentTest.log(LogStatus.PASS, "User click check button terms and Place order");
+	}
 	@After
 	public void closeObject() {
 		report.endTest(extentTest);
