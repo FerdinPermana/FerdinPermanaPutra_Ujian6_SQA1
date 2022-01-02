@@ -12,16 +12,16 @@ public class ConfigurationProperties {
 	private String browser;
 	
 	@Value("${myusername}")
-	private String userName;
+	private String myusername;
 	
-	@Value("${emailaddress}")
-	private String emailaddress;
+	@Value("${email}")
+	private String email;
 	
-	@Value("${passowrd}")
+	@Value("${password}")
 	private String password;
 	
-	@Value("${search}")
-	private String search;
+	@Value("${searchglass}")
+	private String searchglass;
 	
 	@Value("${firstname}")
 	private String firstname;
@@ -32,11 +32,20 @@ public class ConfigurationProperties {
 	@Value("${company}")
 	private String company;
 	
-	@Value("${address}")
-	private String address;
+	@Value("${selectcountry}")
+	private String selectcountry;
+	
+	@Value("${address1}")
+	private String address1;
+	
+	@Value("${address2}")
+	private String address2;
 	
 	@Value("${city}")
 	private String city;
+	
+	@Value("${selectstate}")
+	private String selectstate;
 	
 	@Value("${postcode}")
 	private String postcode;
@@ -44,33 +53,35 @@ public class ConfigurationProperties {
 	@Value("${phone}")
 	private String phone;
 	
-	@Value("${email}")
-	private String email;
-
+	@Value("${additional}")
+	private String additional;
+	
+	
+	
+	public String getSearchGlass() {
+		return searchglass;
+	}
+	
 	public String getBrowser() {
 		return browser;
 	}
-
-	public String getUserName() {
-		return userName;
+	
+	public String getUsername() {
+		return myusername;
 	}
-
-	public String getEmailaddress() {
-		return emailaddress;
+	
+	public String getEmail() {
+		return email;
 	}
-
+	
 	public String getPassword() {
 		return password;
-	}
-
-	public String getSearch() {
-		return search;
 	}
 
 	public String getFirstname() {
 		return firstname;
 	}
-
+	
 	public String getLastname() {
 		return lastname;
 	}
@@ -78,25 +89,37 @@ public class ConfigurationProperties {
 	public String getCompany() {
 		return company;
 	}
-
-	public String getAddress() {
-		return address;
+	
+	public String getSelectCountry() {
+		return selectcountry;
 	}
-
+	
+	public String getAddress1() {
+		return address1;
+	}
+	
+	public String getAddress2() {
+		return address2;
+	}
+	
 	public String getCity() {
 		return city;
 	}
-
+	
+	public String getSelectState() {
+		return selectstate;
+	}
+	
 	public String getPostcode() {
 		return postcode;
 	}
-
+	
 	public String getPhone() {
 		return phone;
 	}
-
-	public String getEmail() {
-		return email;
+	
+	public String getAdditional() {
+		return additional;
 	}
 
 }
