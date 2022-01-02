@@ -86,14 +86,14 @@ public class StepDefinition {
 	
 	@Then("^User input username password and click Login")
 	public void User_input_username_password_and_click_Login() {
-		loginPage.goToLoggedIn(configurationProperties.getUserName(), configurationProperties.getPassword());
+		loginPage.goToLoggedIn(configurationProperties.getUsername(), configurationProperties.getPassword());
 		extentTest.log(LogStatus.PASS, "User input username password and click Login");
 	}
 	
 	// Add Cart
 	@When("^User click Add Cart")
 	public void user_click_Add_Cart() {
-		addcartPage.goToAddCart();
+		addcartPage.gotoAddCart();
 		extentTest.log(LogStatus.PASS, "User click Add Cart");
 	}
 	
@@ -179,7 +179,7 @@ public class StepDefinition {
 //	CartPage Proceed Checkout
 	@When("^User click addcart")
 	public void user_click_addcart() {
-		addcartPage.goToAddCart();
+		addcartPage.gotoAddCart();
 		extentTest.log(LogStatus.PASS, "User click addcart");
 	}
 	
