@@ -2,9 +2,10 @@ package com.juaracoding.wptesting.utils;
 
 public enum TestCases {
 
-	T1("1. Login"),
-	T2("2. AddCart product");
-//	T3("3. AddCart Glass product")
+//	T1("Testing Register"),
+	T2("Login"),
+	T3("Testing Add to Cart menu"),
+	T4("Testing Proceed to Checkout");
 	
 	private String testName;	
 
